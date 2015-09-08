@@ -65,6 +65,7 @@ angular.module('ionic.wizard', [])
                 nextConditionFn: '&nextCondition',
                 prevConditionFn: "&prevCondition"
             },
+            priority: 1000,
             require: '^^ionWizard',
             link: function(scope, element, attrs, controller) {
                 var nextFn = function() {
